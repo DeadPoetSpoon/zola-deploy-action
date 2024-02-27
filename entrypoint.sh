@@ -64,7 +64,7 @@ main() {
         cd ..
     else
         echo "wget ${PREBUILD_FEATURES} from DeadPoetSpoon/zola-deploy-action"
-        wget -q -O - "https://github.com/DeadPoetSpoon/zola-deploy-action/releases/download/v0.9/zola-${PREBUILD_FEATURES}-x86_64-unknown-linux-gnu.tar.gz" | tar xzf - -C /usr/local/bin
+        wget -q -O - "https://github.com/DeadPoetSpoon/zola-deploy-action/releases/download/v0.10/zola-${PREBUILD_FEATURES}-x86_64-unknown-linux-gnu.tar.gz" | tar xzf - -C /usr/local/bin
     fi
 
     echo "Starting deploy..."
