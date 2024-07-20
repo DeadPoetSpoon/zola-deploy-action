@@ -14,7 +14,7 @@ Using pre-build Zola
 ```
 name: Pre Build Test
 
-on: 
+on:
  push:
   branches:
    - main
@@ -27,7 +27,7 @@ jobs:
     - name: Checkout main
       uses: actions/checkout@v4
     - name: Build
-      uses: DeadPoetSpoon/zola-deploy-action@v0.10
+      uses: DeadPoetSpoon/zola-deploy-action@v0.11
       env:
         PREBUILD_FEATURES: indexing-zh
         BUILD_DIR: test-site
@@ -38,7 +38,7 @@ By building Zola with features
 ```
 name: Build Test With Features
 
-on: 
+on:
  push:
   branches:
    - main
@@ -51,7 +51,7 @@ jobs:
     - name: Checkout main
       uses: actions/checkout@v4
     - name: Build
-      uses: DeadPoetSpoon/zola-deploy-action@v0.10
+      uses: DeadPoetSpoon/zola-deploy-action@v0.11
       env:
         ZOLA_BUILD_FEATURES: indexing-zh
         BUILD_DIR: test-site
