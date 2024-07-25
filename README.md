@@ -27,7 +27,7 @@ jobs:
     - name: Checkout main
       uses: actions/checkout@v4
     - name: Build
-      uses: DeadPoetSpoon/zola-deploy-action@v0.11
+      uses: DeadPoetSpoon/zola-deploy-action@v0.12
       env:
         PREBUILD_FEATURES: indexing-zh
         BUILD_DIR: test-site
@@ -51,7 +51,7 @@ jobs:
     - name: Checkout main
       uses: actions/checkout@v4
     - name: Build
-      uses: DeadPoetSpoon/zola-deploy-action@v0.11
+      uses: DeadPoetSpoon/zola-deploy-action@v0.12
       env:
         ZOLA_BUILD_FEATURES: indexing-zh
         BUILD_DIR: test-site
