@@ -63,6 +63,8 @@ main() {
         fi
         cd ..
     else
+        apt-get update
+        apt-get install -y libc6
         echo "wget ${PREBUILD_FEATURES} from DeadPoetSpoon/zola-deploy-action"
         wget -q -O - "https://github.com/DeadPoetSpoon/zola-deploy-action/releases/download/v0.11/zola-${PREBUILD_FEATURES}-x86_64-unknown-linux-gnu.tar.gz" | tar xzf - -C /usr/local/bin
     fi
