@@ -1,3 +1,4 @@
+#!/bin/bash
 rustup update
 cd /rust/zola
 git config --global --add safe.directory /rust/zola
