@@ -54,6 +54,8 @@ main() {
 
     if [[ -z "$PREBUILD_FEATURES" ]]; then
         echo "Building Zola ..."
+        apt-get update
+        apt-get install -y lld clang
         git clone https://github.com/getzola/zola.git
         cd zola
         if [[ -z "$ZOLA_BUILD_FEATURES" ]]; then
