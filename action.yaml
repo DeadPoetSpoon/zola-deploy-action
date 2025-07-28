@@ -1,9 +1,9 @@
-name: 'Zola Deploy to Pages'
-description: 'Build and deploy a Zola site to GitHub Pages'
-author: 'Shaleen Jain'
+name: "Zola(with indexing-zh feature) Deploy to Pages"
+description: "Build and deploy a Zola(with indexing-zh feature) site to GitHub Pages"
+author: "Shaleen Jain"
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: "docker"
+  image: "Dockerfile"
 branding:
-  icon: 'zap'  
-  color: 'green'
+  icon: "zap"
+  color: "green"
