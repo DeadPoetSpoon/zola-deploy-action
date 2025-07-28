@@ -1,3 +1,5 @@
+# Use unofficial [zola](https://github.com/DeadPoetSpoon/zola) build with indexing-zh feature
+
 # Zola Deploy Action
 
 [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fshalzz%2Fzola-deploy-action%2Fbadge&style=flat)](https://actions-badge.atrox.dev/shalzz/zola-deploy-action/goto)
@@ -21,7 +23,7 @@ This example will build and deploy to gh-pages on push to the main branch.
 ```yml
 name: Zola on GitHub Pages
 
-on: 
+on:
  push:
   branches:
    - main
@@ -39,7 +41,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-This example will build and deploy to gh-pages branch on a push to the main branch, 
+This example will build and deploy to gh-pages branch on a push to the main branch,
 and it will build only on pull requests.
 ```yml
 name: Zola on GitHub Pages
@@ -95,7 +97,7 @@ jobs:
 
 ## Custom Domain
 
-If you're using a custom domain for your GitHub Pages site put the CNAME 
+If you're using a custom domain for your GitHub Pages site put the CNAME
 in `static/CNAME` so that zola puts it in the root of the public folder
 which is where GitHub expects it to be.
 
